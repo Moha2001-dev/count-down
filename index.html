@@ -6,11 +6,38 @@
     <title>يومنا الكبير - تقاليد عربية</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Amiri', 'Montserrat', sans-serif;
+        background-color: #fdfaf4;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+      }
+      .font-arabic-style {
+        font-family: 'Amiri', serif;
+      }
+      .gold-gradient {
+        background: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .arabesque-pattern {
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4af37' fill-opacity='0.15'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      }
+      @keyframes drift {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-50%);
+        }
+      }
+    </style>
 </head>
-<body style="font-family: 'Amiri', 'Montserrat', sans-serif; background-color: #fdfaf4; overflow-x:hidden;">
-    <div id="root" style="">
-        <h1 style="font-family: 'Playfair Display', serif; background: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Welcome to our Great Day - Arabic Traditions</h1>
-    </div>
-    <script type="module" src="/count-down/index.tsx"></script>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
 </body>
 </html>
