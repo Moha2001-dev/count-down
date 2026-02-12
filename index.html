@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countdown</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Count Down</title>
+    <script type="module" src="app.ts"></script>
+    <style>
+        /* Inline Tailwind styles can be added here */
+    </style>
 </head>
 <body>
-    <div id="countdown-root"></div>
-    <script type="module" src="index.tsx"></script>
+    <h1 class="text-3xl font-bold underline">
+        Count Down Timer
+    </h1>
+    <div id="timer" class="text-lg text-center mt-4"></div>
+    <script type="module" src="app.ts"></script>
 </body>
 </html>
