@@ -1,19 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Count Down</title>
-    <script type="module" src="app.ts"></script>
-    <style>
-        /* Inline Tailwind styles can be added here */
-    </style>
+    <title>يومنا الكبير - تقاليد عربية</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1 class="text-3xl font-bold underline">
-        Count Down Timer
-    </h1>
-    <div id="timer" class="text-lg text-center mt-4"></div>
-    <script type="module" src="app.ts"></script>
+<body style="font-family: 'Amiri', 'Montserrat', sans-serif; background-color: #fdfaf4; overflow-x:hidden;">
+    <div id="root" style="">
+        <h1 style="font-family: 'Playfair Display', serif; background: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Welcome to our Great Day - Arabic Traditions</h1>
+    </div>
+    <script type="module" src="/count-down/index.tsx"></script>
 </body>
 </html>
